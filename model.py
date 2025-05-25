@@ -7,11 +7,51 @@ from transformers import (
     AutoTokenizer, 
     AutoModelForSequenceClassification, 
     Trainer, 
-    TrainingArguments
+    TrainingArguments,
+    EarlyStoppingCallback,
+    AutoConfig
 )
 from sklearn.metrics import f1_score
 from tqdm import tqdm
+from transformers import AutoModel, PreTrainedModel
+from transformers.modeling_outputs import SequenceClassifierOutput
+from torch import nn
 
+class CustomBertForSequenceClassification(PreTrainedModel):
+    def __init__(self, config):
+        super().__init__(config)
+        self.bert = AutoModel.from_config(config)
+        self.dropout = nn.Dropout(config.hidden_dropout_prob)
+        self.classifier = nn.Linear(config.hidden_size, config.num_labels)
+        self.config = config
+
+    def forward(self, input_ids=None, attention_mask=None, token_type_ids=None, labels=None):
+        outputs = self.bert(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            token_type_ids=token_type_ids,
+            return_dict=True
+        )
+        last_hidden_state = outputs.last_hidden_state
+        # 混合池化：mean pooling + [CLS]
+        mean_pooling = torch.sum(last_hidden_state * attention_mask.unsqueeze(-1), dim=1) / attention_mask.sum(dim=1, keepdim=True)
+        cls_token = last_hidden_state[:, 0]
+        pooled_output = 0.5 * mean_pooling + 0.5 * cls_token
+
+        pooled_output = self.dropout(pooled_output)
+        logits = self.classifier(pooled_output)
+
+        loss = None
+        if labels is not None:
+            loss_fct = nn.CrossEntropyLoss()
+            loss = loss_fct(logits.view(-1, self.config.num_labels), labels.view(-1))
+
+        return SequenceClassifierOutput(
+            loss=loss,
+            logits=logits,
+            hidden_states=outputs.hidden_states,
+            attentions=outputs.attentions
+        )
 
 ############################## 1. 训练 ##############################
 # 1.1 数据加载
@@ -34,9 +74,11 @@ def get_datasets(train_path, dev_path):
     return train_dataset, dev_dataset
 
 # 2. 拿到预训练的模型
-def get_model_and_tokenizer(model_name='hfl/chinese-macbert-base'):
+def get_model_and_tokenizer(model_name='hfl/chinese-macbert-large'):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
+    config = AutoConfig.from_pretrained(model_name)
+    config.num_labels = 2
+    model = CustomBertForSequenceClassification.from_pretrained(model_name, config=config)
     return tokenizer, model
 
 
@@ -76,7 +118,7 @@ def train():
         learning_rate=2e-5,
         per_device_train_batch_size=16,
         per_device_eval_batch_size=16,
-        num_train_epochs=3,
+        num_train_epochs=5,  # 可调为 5~10
         weight_decay=0.01,
         logging_dir=logs_dir,
         logging_steps=10,
@@ -85,6 +127,10 @@ def train():
         greater_is_better=True,
         report_to="tensorboard",
         save_total_limit=2,
+
+        # 以下是新增/改进部分
+        lr_scheduler_type="cosine",  # 可选 'linear', 'cosine', 'cosine_with_restarts', 'polynomial', 'constant'
+        warmup_ratio=0.1,  # 前 10% 训练步数用于 warmup
     )
 
     trainer = Trainer(
@@ -93,7 +139,8 @@ def train():
         train_dataset=tokenized_train,
         eval_dataset=tokenized_dev,
         tokenizer=tokenizer,
-        compute_metrics=compute_metrics
+        compute_metrics=compute_metrics,
+        callbacks=[EarlyStoppingCallback(early_stopping_patience=2)]  # 如果2个epoch不提升，就停止
     )
 
     model_dir = os.path.abspath('./best_model')
