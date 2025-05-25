@@ -52,8 +52,8 @@ def train():
     # 1. 读取数据集
     train_dataset, dev_dataset = get_datasets('./data/train.json', './data/dev.json')
 
-    # 2. 拿到预训练的模型
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # 2. 拿到预训练的模型，并指定使用 GPU 2
+    device = torch.device("cuda:2")  # 明确指定使用 GPU 2
     tokenizer, model = get_model_and_tokenizer()
     model.to(device)
 
@@ -71,7 +71,7 @@ def train():
     os.makedirs(results_dir, exist_ok=True)
     training_args = TrainingArguments(
         output_dir=results_dir,
-        evaluation_strategy='epoch',
+        eval_strategy='epoch',
         save_strategy='epoch',
         learning_rate=2e-5,
         per_device_train_batch_size=16,
@@ -106,7 +106,7 @@ def train():
 
 ############################## 2. 推理与生成提交文件 ##############################
 def predict():
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:2")  # 明确指定使用 GPU 2
     test_data = load_json('./data/test.json')
     tokenizer = AutoTokenizer.from_pretrained('./best_model')
     model = AutoModelForSequenceClassification.from_pretrained('./best_model')

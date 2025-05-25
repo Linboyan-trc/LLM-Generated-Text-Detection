@@ -1,0 +1,102 @@
+(NER-RC) yangrongjin@10-116-218-97:~/LLM-Generated-Text-Detection$ python model.py
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at hfl/chinese-macbert-base and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%|█████████████████████████████████████████████████████████████████████| 32400/32400 [00:09<00:00, 3324.93 examples/s]
+Map: 100%|███████████████████████████████████████████████████████████████████████| 2800/2800 [00:00<00:00, 2955.51 examples/s]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+        - Avoid using `tokenizers` before the fork if possible
+        - Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+/home/yangrongjin/LLM-Generated-Text-Detection/model.py:90: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+开始训练...
+  0%|                                                                                                 | 0/762 [00:00<?, ?it/s]/mtc/yangrongjin/miniconda3/envs/NER-RC/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 0.3925, 'grad_norm': 3.1247174739837646, 'learning_rate': 1.9763779527559057e-05, 'epoch': 0.04}                     
+{'loss': 0.096, 'grad_norm': 3.7887227535247803, 'learning_rate': 1.9501312335958006e-05, 'epoch': 0.08}                      
+{'loss': 0.0421, 'grad_norm': 13.750265121459961, 'learning_rate': 1.9238845144356958e-05, 'epoch': 0.12}                     
+{'loss': 0.0325, 'grad_norm': 0.34447282552719116, 'learning_rate': 1.8976377952755907e-05, 'epoch': 0.16}                    
+{'loss': 0.0382, 'grad_norm': 4.341826915740967, 'learning_rate': 1.8713910761154856e-05, 'epoch': 0.2}                       
+{'loss': 0.0096, 'grad_norm': 1.4489911794662476, 'learning_rate': 1.8451443569553805e-05, 'epoch': 0.24}                     
+{'loss': 0.0132, 'grad_norm': 6.644293785095215, 'learning_rate': 1.8188976377952758e-05, 'epoch': 0.28}                      
+{'loss': 0.0227, 'grad_norm': 0.4118165969848633, 'learning_rate': 1.7926509186351707e-05, 'epoch': 0.31}                     
+{'loss': 0.0132, 'grad_norm': 0.4970158338546753, 'learning_rate': 1.766404199475066e-05, 'epoch': 0.35}                      
+{'loss': 0.0111, 'grad_norm': 6.730266571044922, 'learning_rate': 1.740157480314961e-05, 'epoch': 0.39}                       
+{'loss': 0.0207, 'grad_norm': 0.0483502559363842, 'learning_rate': 1.7139107611548558e-05, 'epoch': 0.43}                     
+{'loss': 0.0223, 'grad_norm': 9.924168586730957, 'learning_rate': 1.6876640419947507e-05, 'epoch': 0.47}                      
+{'loss': 0.0078, 'grad_norm': 0.48208731412887573, 'learning_rate': 1.6614173228346456e-05, 'epoch': 0.51}                    
+{'loss': 0.0043, 'grad_norm': 0.04549327492713928, 'learning_rate': 1.635170603674541e-05, 'epoch': 0.55}                     
+{'loss': 0.0069, 'grad_norm': 0.030709808692336082, 'learning_rate': 1.608923884514436e-05, 'epoch': 0.59}                    
+{'loss': 0.0054, 'grad_norm': 2.668214797973633, 'learning_rate': 1.582677165354331e-05, 'epoch': 0.63}                       
+{'loss': 0.0109, 'grad_norm': 10.780738830566406, 'learning_rate': 1.556430446194226e-05, 'epoch': 0.67}                      
+{'loss': 0.0015, 'grad_norm': 7.087054252624512, 'learning_rate': 1.5301837270341208e-05, 'epoch': 0.71}                      
+{'loss': 0.0032, 'grad_norm': 0.03470196574926376, 'learning_rate': 1.5039370078740159e-05, 'epoch': 0.75}                    
+{'loss': 0.0058, 'grad_norm': 1.5532183647155762, 'learning_rate': 1.4776902887139108e-05, 'epoch': 0.79}                     
+{'loss': 0.0164, 'grad_norm': 0.041838888078927994, 'learning_rate': 1.4514435695538059e-05, 'epoch': 0.83}                   
+{'loss': 0.0039, 'grad_norm': 0.020220309495925903, 'learning_rate': 1.4251968503937008e-05, 'epoch': 0.87}                   
+{'loss': 0.0012, 'grad_norm': 0.0196247398853302, 'learning_rate': 1.398950131233596e-05, 'epoch': 0.91}                      
+{'loss': 0.013, 'grad_norm': 0.11917255818843842, 'learning_rate': 1.372703412073491e-05, 'epoch': 0.94}                      
+{'loss': 0.0028, 'grad_norm': 10.513057708740234, 'learning_rate': 1.346456692913386e-05, 'epoch': 0.98}                      
+{'eval_loss': 1.5589238405227661, 'eval_macro_f1': 0.750245758112182, 'eval_runtime': 3.4287, 'eval_samples_per_second': 816.632, 'eval_steps_per_second': 6.416, 'epoch': 1.0}                                                                             
+ 33%|█████████████████████████████                                                          | 254/762 [01:10<01:34,  5.38it/s/mtc/yangrongjin/miniconda3/envs/NER-RC/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 0.0042, 'grad_norm': 0.04983414337038994, 'learning_rate': 1.320209973753281e-05, 'epoch': 1.02}                     
+{'loss': 0.0102, 'grad_norm': 0.17503030598163605, 'learning_rate': 1.293963254593176e-05, 'epoch': 1.06}                     
+{'loss': 0.0047, 'grad_norm': 1.4738678932189941, 'learning_rate': 1.267716535433071e-05, 'epoch': 1.1}                       
+{'loss': 0.0058, 'grad_norm': 0.17035828530788422, 'learning_rate': 1.2414698162729659e-05, 'epoch': 1.14}                    
+{'loss': 0.004, 'grad_norm': 0.01677616685628891, 'learning_rate': 1.215223097112861e-05, 'epoch': 1.18}                      
+{'loss': 0.0048, 'grad_norm': 0.097156822681427, 'learning_rate': 1.1889763779527562e-05, 'epoch': 1.22}                      
+{'loss': 0.0079, 'grad_norm': 1.7942334413528442, 'learning_rate': 1.1627296587926511e-05, 'epoch': 1.26}                     
+{'loss': 0.0134, 'grad_norm': 0.12323425710201263, 'learning_rate': 1.136482939632546e-05, 'epoch': 1.3}                      
+{'loss': 0.0132, 'grad_norm': 0.06907402724027634, 'learning_rate': 1.1102362204724411e-05, 'epoch': 1.34}                    
+{'loss': 0.0032, 'grad_norm': 0.017555683851242065, 'learning_rate': 1.083989501312336e-05, 'epoch': 1.38}                    
+{'loss': 0.0011, 'grad_norm': 0.007631232962012291, 'learning_rate': 1.057742782152231e-05, 'epoch': 1.42}                    
+{'loss': 0.0035, 'grad_norm': 0.008215054869651794, 'learning_rate': 1.031496062992126e-05, 'epoch': 1.46}                    
+{'loss': 0.003, 'grad_norm': 2.514256238937378, 'learning_rate': 1.005249343832021e-05, 'epoch': 1.5}                         
+{'loss': 0.0048, 'grad_norm': 0.009734107181429863, 'learning_rate': 9.790026246719161e-06, 'epoch': 1.54}                    
+{'loss': 0.0031, 'grad_norm': 0.008372083306312561, 'learning_rate': 9.52755905511811e-06, 'epoch': 1.57}                     
+{'loss': 0.0037, 'grad_norm': 0.2969786822795868, 'learning_rate': 9.265091863517061e-06, 'epoch': 1.61}                      
+{'loss': 0.0004, 'grad_norm': 0.16818614304065704, 'learning_rate': 9.002624671916012e-06, 'epoch': 1.65}                     
+{'loss': 0.0003, 'grad_norm': 0.0076367491856217384, 'learning_rate': 8.740157480314961e-06, 'epoch': 1.69}                   
+{'loss': 0.0027, 'grad_norm': 0.0056949397549033165, 'learning_rate': 8.47769028871391e-06, 'epoch': 1.73}                    
+{'loss': 0.0003, 'grad_norm': 0.09015197306871414, 'learning_rate': 8.215223097112861e-06, 'epoch': 1.77}                     
+{'loss': 0.0004, 'grad_norm': 0.0740017294883728, 'learning_rate': 7.952755905511812e-06, 'epoch': 1.81}                      
+{'loss': 0.0049, 'grad_norm': 1.65328848361969, 'learning_rate': 7.690288713910761e-06, 'epoch': 1.85}                        
+{'loss': 0.0049, 'grad_norm': 10.806838035583496, 'learning_rate': 7.427821522309712e-06, 'epoch': 1.89}                      
+{'loss': 0.0008, 'grad_norm': 0.011766462586820126, 'learning_rate': 7.165354330708662e-06, 'epoch': 1.93}                    
+{'loss': 0.0016, 'grad_norm': 0.5020557641983032, 'learning_rate': 6.902887139107613e-06, 'epoch': 1.97}                      
+{'eval_loss': 1.5574977397918701, 'eval_macro_f1': 0.7686350153217445, 'eval_runtime': 3.4586, 'eval_samples_per_second': 809.574, 'eval_steps_per_second': 6.361, 'epoch': 2.0}                                                                            
+ 67%|██████████████████████████████████████████████████████████                             | 508/762 [02:17<00:47,  5.40it/s/mtc/yangrongjin/miniconda3/envs/NER-RC/lib/python3.9/site-packages/torch/nn/parallel/_functions.py:70: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+{'loss': 0.0002, 'grad_norm': 0.004591698292642832, 'learning_rate': 6.6404199475065626e-06, 'epoch': 2.01}                   
+{'loss': 0.0002, 'grad_norm': 0.0043447078205645084, 'learning_rate': 6.3779527559055125e-06, 'epoch': 2.05}                  
+{'loss': 0.0002, 'grad_norm': 0.0045923953875899315, 'learning_rate': 6.115485564304462e-06, 'epoch': 2.09}                   
+{'loss': 0.0001, 'grad_norm': 0.004383220802992582, 'learning_rate': 5.853018372703413e-06, 'epoch': 2.13}                    
+{'loss': 0.0006, 'grad_norm': 0.03714462369680405, 'learning_rate': 5.590551181102362e-06, 'epoch': 2.17}                     
+{'loss': 0.0002, 'grad_norm': 0.00351007585413754, 'learning_rate': 5.328083989501312e-06, 'epoch': 2.2}                      
+{'loss': 0.0002, 'grad_norm': 0.0034320205450057983, 'learning_rate': 5.065616797900262e-06, 'epoch': 2.24}                   
+{'loss': 0.001, 'grad_norm': 0.0030360484961420298, 'learning_rate': 4.803149606299213e-06, 'epoch': 2.28}                    
+{'loss': 0.0001, 'grad_norm': 0.008380347862839699, 'learning_rate': 4.540682414698163e-06, 'epoch': 2.32}                    
+{'loss': 0.0006, 'grad_norm': 0.0037630763836205006, 'learning_rate': 4.278215223097113e-06, 'epoch': 2.36}                   
+{'loss': 0.0037, 'grad_norm': 0.005128014367073774, 'learning_rate': 4.015748031496064e-06, 'epoch': 2.4}                     
+{'loss': 0.0017, 'grad_norm': 0.003718781052157283, 'learning_rate': 3.7532808398950133e-06, 'epoch': 2.44}                   
+{'loss': 0.0002, 'grad_norm': 0.0039225430227816105, 'learning_rate': 3.4908136482939637e-06, 'epoch': 2.48}                  
+{'loss': 0.0002, 'grad_norm': 0.004040825180709362, 'learning_rate': 3.2283464566929136e-06, 'epoch': 2.52}                   
+{'loss': 0.0013, 'grad_norm': 0.0026360105257481337, 'learning_rate': 2.965879265091864e-06, 'epoch': 2.56}                   
+{'loss': 0.0005, 'grad_norm': 0.00268629752099514, 'learning_rate': 2.7034120734908135e-06, 'epoch': 2.6}                     
+{'loss': 0.0001, 'grad_norm': 0.0032594050280749798, 'learning_rate': 2.440944881889764e-06, 'epoch': 2.64}                   
+{'loss': 0.0001, 'grad_norm': 0.0026306831277906895, 'learning_rate': 2.1784776902887143e-06, 'epoch': 2.68}                  
+{'loss': 0.0001, 'grad_norm': 0.002875290811061859, 'learning_rate': 1.9160104986876642e-06, 'epoch': 2.72}                   
+{'loss': 0.0001, 'grad_norm': 0.0030008084140717983, 'learning_rate': 1.6535433070866144e-06, 'epoch': 2.76}                  
+{'loss': 0.0001, 'grad_norm': 0.04352973774075508, 'learning_rate': 1.3910761154855646e-06, 'epoch': 2.8}                     
+{'loss': 0.0001, 'grad_norm': 0.002423894591629505, 'learning_rate': 1.1286089238845145e-06, 'epoch': 2.83}                   
+{'loss': 0.0001, 'grad_norm': 0.002659218618646264, 'learning_rate': 8.661417322834646e-07, 'epoch': 2.87}                    
+{'loss': 0.0002, 'grad_norm': 0.0024286394473165274, 'learning_rate': 6.036745406824148e-07, 'epoch': 2.91}                   
+{'loss': 0.0001, 'grad_norm': 0.005579021293669939, 'learning_rate': 3.4120734908136486e-07, 'epoch': 2.95}                   
+{'loss': 0.0001, 'grad_norm': 0.0027107747737318277, 'learning_rate': 7.874015748031497e-08, 'epoch': 2.99}                   
+{'eval_loss': 1.5989714860916138, 'eval_macro_f1': 0.7770590884585533, 'eval_runtime': 3.3491, 'eval_samples_per_second': 836.05, 'eval_steps_per_second': 6.569, 'epoch': 3.0}                                                                             
+{'train_runtime': 206.2401, 'train_samples_per_second': 471.295, 'train_steps_per_second': 3.695, 'train_loss': 0.012022045328910646, 'epoch': 3.0}                                                                                                         
+100%|███████████████████████████████████████████████████████████████████████████████████████| 762/762 [03:26<00:00,  3.69it/s]
+训练完成，保存模型中...
+模型已保存到: /home/yangrongjin/LLM-Generated-Text-Detection/best_model
