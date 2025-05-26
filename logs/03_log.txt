@@ -1,0 +1,116 @@
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+开始训练...
+{'loss': 0.6849, 'grad_norm': 3.9804036617279053, 'learning_rate': 1.4173228346456693e-06, 'epoch': 0.04}
+{'loss': 0.6533, 'grad_norm': 33.019962310791016, 'learning_rate': 2.992125984251969e-06, 'epoch': 0.08}
+{'loss': 0.5845, 'grad_norm': 5.858208656311035, 'learning_rate': 4.566929133858268e-06, 'epoch': 0.12}
+{'loss': 0.5595, 'grad_norm': 135.3393096923828, 'learning_rate': 6.141732283464567e-06, 'epoch': 0.16}
+{'loss': 0.5177, 'grad_norm': 6.113898277282715, 'learning_rate': 7.716535433070867e-06, 'epoch': 0.2}
+{'loss': 0.4749, 'grad_norm': 4.979887008666992, 'learning_rate': 9.291338582677165e-06, 'epoch': 0.24}
+{'loss': 0.4032, 'grad_norm': 6.874490261077881, 'learning_rate': 1.0866141732283466e-05, 'epoch': 0.28}
+{'loss': 0.3454, 'grad_norm': 6.568240165710449, 'learning_rate': 1.2440944881889764e-05, 'epoch': 0.31}
+{'loss': 0.2174, 'grad_norm': 5.186478614807129, 'learning_rate': 1.4015748031496063e-05, 'epoch': 0.35}
+{'loss': 0.1832, 'grad_norm': 6.7601141929626465, 'learning_rate': 1.559055118110236e-05, 'epoch': 0.39}
+{'loss': 0.1356, 'grad_norm': 7.4640421867370605, 'learning_rate': 1.7165354330708663e-05, 'epoch': 0.43}
+{'loss': 0.1248, 'grad_norm': 12.364241600036621, 'learning_rate': 1.8740157480314962e-05, 'epoch': 0.47}
+{'loss': 0.1036, 'grad_norm': 2.6875133514404297, 'learning_rate': 1.9999848909838078e-05, 'epoch': 0.51}
+{'loss': 0.089, 'grad_norm': 4.49915075302124, 'learning_rate': 1.9994561233548295e-05, 'epoch': 0.55}
+{'loss': 0.0657, 'grad_norm': 12.744999885559082, 'learning_rate': 1.9981723614189646e-05, 'epoch': 0.59}
+{'loss': 0.0775, 'grad_norm': 28.787195205688477, 'learning_rate': 1.9961345749365964e-05, 'epoch': 0.63}
+{'loss': 0.0491, 'grad_norm': 13.334610939025879, 'learning_rate': 1.9933443032621365e-05, 'epoch': 0.67}
+{'loss': 0.0445, 'grad_norm': 1.0230200290679932, 'learning_rate': 1.989803654181189e-05, 'epoch': 0.71}
+{'loss': 0.041, 'grad_norm': 4.950688362121582, 'learning_rate': 1.9855153023183187e-05, 'epoch': 0.75}
+{'loss': 0.0347, 'grad_norm': 3.6472573280334473, 'learning_rate': 1.9804824871166254e-05, 'epoch': 0.79}
+{'loss': 0.0768, 'grad_norm': 1.133051872253418, 'learning_rate': 1.9747090103906523e-05, 'epoch': 0.83}
+{'loss': 0.0391, 'grad_norm': 4.194483757019043, 'learning_rate': 1.9681992334544753e-05, 'epoch': 0.87}
+{'loss': 0.0413, 'grad_norm': 6.658581733703613, 'learning_rate': 1.9609580738271438e-05, 'epoch': 0.91}
+{'loss': 0.0326, 'grad_norm': 5.389002799987793, 'learning_rate': 1.952991001517962e-05, 'epoch': 0.94}
+{'loss': 0.0171, 'grad_norm': 3.4915409088134766, 'learning_rate': 1.9443040348944157e-05, 'epoch': 0.98}
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+{'eval_loss': 0.7964348196983337, 'eval_macro_f1': 0.513181247453776, 'eval_runtime': 3.5488, 'eval_samples_per_second': 789.006, 'eval_steps_per_second': 6.199, 'epoch': 1.0}
+{'loss': 0.0407, 'grad_norm': 8.381105422973633, 'learning_rate': 1.934903736135866e-05, 'epoch': 1.02}
+{'loss': 0.0422, 'grad_norm': 4.315669536590576, 'learning_rate': 1.924797206276445e-05, 'epoch': 1.06}
+{'loss': 0.0256, 'grad_norm': 0.967379093170166, 'learning_rate': 1.913992079840898e-05, 'epoch': 1.1}
+{'loss': 0.0303, 'grad_norm': 11.224580764770508, 'learning_rate': 1.9024965190774262e-05, 'epoch': 1.14}
+{'loss': 0.0319, 'grad_norm': 0.2936229407787323, 'learning_rate': 1.89031920779188e-05, 'epoch': 1.18}
+{'loss': 0.0112, 'grad_norm': 0.2698949873447418, 'learning_rate': 1.8774693447879658e-05, 'epoch': 1.22}
+{'loss': 0.0236, 'grad_norm': 5.2435221672058105, 'learning_rate': 1.8639566369184284e-05, 'epoch': 1.26}
+{'loss': 0.0151, 'grad_norm': 1.4183763265609741, 'learning_rate': 1.849791291752437e-05, 'epoch': 1.3}
+{'loss': 0.0152, 'grad_norm': 1.8922027349472046, 'learning_rate': 1.8349840098647406e-05, 'epoch': 1.34}
+{'loss': 0.0231, 'grad_norm': 0.4702329933643341, 'learning_rate': 1.8195459767523953e-05, 'epoch': 1.38}
+{'loss': 0.023, 'grad_norm': 2.1740214824676514, 'learning_rate': 1.803488854385183e-05, 'epoch': 1.42}
+{'loss': 0.006, 'grad_norm': 0.11633893102407455, 'learning_rate': 1.7868247723961003e-05, 'epoch': 1.46}
+{'loss': 0.0124, 'grad_norm': 4.346445560455322, 'learning_rate': 1.7695663189185703e-05, 'epoch': 1.5}
+{'loss': 0.0192, 'grad_norm': 11.07588005065918, 'learning_rate': 1.7517265310773014e-05, 'epoch': 1.54}
+{'loss': 0.0135, 'grad_norm': 0.22200849652290344, 'learning_rate': 1.7333188851399777e-05, 'epoch': 1.57}
+{'loss': 0.0045, 'grad_norm': 0.054505523294210434, 'learning_rate': 1.7143572863372148e-05, 'epoch': 1.61}
+{'loss': 0.0101, 'grad_norm': 5.971973419189453, 'learning_rate': 1.694856058358479e-05, 'epoch': 1.65}
+{'loss': 0.0338, 'grad_norm': 0.03248656913638115, 'learning_rate': 1.674829932531896e-05, 'epoch': 1.69}
+{'loss': 0.0052, 'grad_norm': 0.07534532248973846, 'learning_rate': 1.6542940366961327e-05, 'epoch': 1.73}
+{'loss': 0.0021, 'grad_norm': 0.055080316960811615, 'learning_rate': 1.633263883772747e-05, 'epoch': 1.77}
+{'loss': 0.0079, 'grad_norm': 0.03309715911746025, 'learning_rate': 1.6117553600476497e-05, 'epoch': 1.81}
+{'loss': 0.0239, 'grad_norm': 0.45415666699409485, 'learning_rate': 1.5897847131705194e-05, 'epoch': 1.85}
+{'loss': 0.0035, 'grad_norm': 2.928969144821167, 'learning_rate': 1.5673685398812467e-05, 'epoch': 1.89}
+{'loss': 0.0242, 'grad_norm': 0.06257785856723785, 'learning_rate': 1.544523773472669e-05, 'epoch': 1.93}
+{'loss': 0.005, 'grad_norm': 0.08494706451892853, 'learning_rate': 1.5212676709990762e-05, 'epoch': 1.97}
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+{'eval_loss': 1.0225132703781128, 'eval_macro_f1': 0.5264679674855886, 'eval_runtime': 3.5173, 'eval_samples_per_second': 796.064, 'eval_steps_per_second': 6.255, 'epoch': 2.0}
+{'loss': 0.0045, 'grad_norm': 0.020592626184225082, 'learning_rate': 1.4976178002401408e-05, 'epoch': 2.01}
+{'loss': 0.0253, 'grad_norm': 0.024761684238910675, 'learning_rate': 1.4735920264301288e-05, 'epoch': 2.05}
+{'loss': 0.0052, 'grad_norm': 0.017235632985830307, 'learning_rate': 1.4492084987624071e-05, 'epoch': 2.09}
+{'loss': 0.0012, 'grad_norm': 0.03029422089457512, 'learning_rate': 1.4244856366794517e-05, 'epoch': 2.13}
+{'loss': 0.0375, 'grad_norm': 4.487094402313232, 'learning_rate': 1.399442115958704e-05, 'epoch': 2.17}
+{'loss': 0.0239, 'grad_norm': 0.5055794715881348, 'learning_rate': 1.3740968546047935e-05, 'epoch': 2.2}
+{'loss': 0.0055, 'grad_norm': 0.10248684883117676, 'learning_rate': 1.348468998558779e-05, 'epoch': 2.24}
+{'loss': 0.0082, 'grad_norm': 2.5392305850982666, 'learning_rate': 1.3225779072352066e-05, 'epoch': 2.28}
+{'loss': 0.0039, 'grad_norm': 0.29293906688690186, 'learning_rate': 1.2964431388979075e-05, 'epoch': 2.32}
+{'loss': 0.0124, 'grad_norm': 0.025784781202673912, 'learning_rate': 1.2700844358855853e-05, 'epoch': 2.36}
+{'loss': 0.0201, 'grad_norm': 0.03399045020341873, 'learning_rate': 1.243521709698351e-05, 'epoch': 2.4}
+{'loss': 0.0084, 'grad_norm': 0.0622694231569767, 'learning_rate': 1.2167750259564733e-05, 'epoch': 2.44}
+{'loss': 0.0025, 'grad_norm': 0.16173690557479858, 'learning_rate': 1.1898645892427064e-05, 'epoch': 2.48}
+{'loss': 0.0065, 'grad_norm': 0.8595433831214905, 'learning_rate': 1.1628107278396432e-05, 'epoch': 2.52}
+{'loss': 0.008, 'grad_norm': 0.03710058704018593, 'learning_rate': 1.1356338783736256e-05, 'epoch': 2.56}
+{'loss': 0.0023, 'grad_norm': 0.13522711396217346, 'learning_rate': 1.1083545703768137e-05, 'epoch': 2.6}
+{'loss': 0.0091, 'grad_norm': 0.12621019780635834, 'learning_rate': 1.0809934107790675e-05, 'epoch': 2.64}
+{'loss': 0.0061, 'grad_norm': 1.2770088911056519, 'learning_rate': 1.05357106834137e-05, 'epoch': 2.68}
+{'loss': 0.0123, 'grad_norm': 6.123815536499023, 'learning_rate': 1.0261082580425366e-05, 'epoch': 2.72}
+{'loss': 0.0054, 'grad_norm': 0.009905057027935982, 'learning_rate': 9.98625725431013e-06, 'epoch': 2.76}
+{'loss': 0.0046, 'grad_norm': 2.595266819000244, 'learning_rate': 9.71144230953582e-06, 'epoch': 2.8}
+{'loss': 0.0085, 'grad_norm': 0.015060641802847385, 'learning_rate': 9.436845342728142e-06, 'epoch': 2.83}
+{'loss': 0.0006, 'grad_norm': 0.025200584903359413, 'learning_rate': 9.162673785851131e-06, 'epoch': 2.87}
+{'loss': 0.0091, 'grad_norm': 0.03657861053943634, 'learning_rate': 8.889134749511956e-06, 'epoch': 2.91}
+{'loss': 0.0049, 'grad_norm': 0.01398540660738945, 'learning_rate': 8.616434866508519e-06, 'epoch': 2.95}
+{'loss': 0.0051, 'grad_norm': 0.03127463534474373, 'learning_rate': 8.344780135737962e-06, 'epoch': 2.99}
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+{'eval_loss': 1.1841437816619873, 'eval_macro_f1': 0.4947070752172053, 'eval_runtime': 3.5437, 'eval_samples_per_second': 790.145, 'eval_steps_per_second': 6.208, 'epoch': 3.0}
+{'loss': 0.001, 'grad_norm': 0.016687706112861633, 'learning_rate': 8.074375766584053e-06, 'epoch': 3.03}
+{'loss': 0.0009, 'grad_norm': 0.3166217505931854, 'learning_rate': 7.805426023900938e-06, 'epoch': 3.07}
+{'loss': 0.0023, 'grad_norm': 0.006303012371063232, 'learning_rate': 7.538134073710437e-06, 'epoch': 3.11}
+{'loss': 0.0087, 'grad_norm': 0.6894893050193787, 'learning_rate': 7.272701829729378e-06, 'epoch': 3.15}
+{'loss': 0.009, 'grad_norm': 0.006330312695354223, 'learning_rate': 7.009329800842929e-06, 'epoch': 3.19}
+{'loss': 0.007, 'grad_norm': 0.012658799067139626, 'learning_rate': 6.748216939639158e-06, 'epoch': 3.23}
+{'loss': 0.0047, 'grad_norm': 0.6862985491752625, 'learning_rate': 6.489560492119225e-06, 'epoch': 3.27}
+{'loss': 0.0012, 'grad_norm': 0.07897233963012695, 'learning_rate': 6.233555848696724e-06, 'epoch': 3.31}
+{'loss': 0.0112, 'grad_norm': 0.010484416037797928, 'learning_rate': 5.980396396598777e-06, 'epoch': 3.35}
+{'loss': 0.0008, 'grad_norm': 0.011313059367239475, 'learning_rate': 5.730273373780309e-06, 'epoch': 3.39}
+{'loss': 0.0108, 'grad_norm': 6.200567245483398, 'learning_rate': 5.483375724461918e-06, 'epoch': 3.43}
+{'loss': 0.0048, 'grad_norm': 0.014269012026488781, 'learning_rate': 5.239889956400435e-06, 'epoch': 3.46}
+{'loss': 0.0054, 'grad_norm': 0.02390911430120468, 'learning_rate': 5.000000000000003e-06, 'epoch': 3.5}
+{'loss': 0.0017, 'grad_norm': 0.0219705943018198, 'learning_rate': 4.763887069370107e-06, 'epoch': 3.54}
+{'loss': 0.0108, 'grad_norm': 5.115997314453125, 'learning_rate': 4.531729525435501e-06, 'epoch': 3.58}
+{'loss': 0.0052, 'grad_norm': 4.055044174194336, 'learning_rate': 4.303702741201431e-06, 'epoch': 3.62}
+{'loss': 0.0007, 'grad_norm': 0.06021978706121445, 'learning_rate': 4.079978969275984e-06, 'epoch': 3.66}
+{'loss': 0.0045, 'grad_norm': 4.989511013031006, 'learning_rate': 3.860727211749572e-06, 'epoch': 3.7}
+{'loss': 0.0018, 'grad_norm': 0.0170094333589077, 'learning_rate': 3.646113092529878e-06, 'epoch': 3.74}
+{'loss': 0.0022, 'grad_norm': 0.022981585934758186, 'learning_rate': 3.436298732228699e-06, 'epoch': 3.78}
+{'loss': 0.0016, 'grad_norm': 0.02537834644317627, 'learning_rate': 3.231442625695217e-06, 'epoch': 3.82}
+{'loss': 0.0028, 'grad_norm': 1.8617795705795288, 'learning_rate': 3.0316995222881584e-06, 'epoch': 3.86}
+{'loss': 0.0028, 'grad_norm': 0.020322682335972786, 'learning_rate': 2.83722030897733e-06, 'epoch': 3.9}
+{'loss': 0.0083, 'grad_norm': 0.013161655515432358, 'learning_rate': 2.6481518963628383e-06, 'epoch': 3.94}
+{'loss': 0.001, 'grad_norm': 0.021688781678676605, 'learning_rate': 2.464637107698046e-06, 'epoch': 3.98}
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+The OrderedVocab you are attempting to save contains holes for indices [12084], your vocabulary could be corrupted !
+{'eval_loss': 1.0722233057022095, 'eval_macro_f1': 0.5092147435897436, 'eval_runtime': 3.5218, 'eval_samples_per_second': 795.044, 'eval_steps_per_second': 6.247, 'epoch': 4.0}
+{'train_runtime': 285.2107, 'train_samples_per_second': 568.001, 'train_steps_per_second': 4.453, 'train_loss': 0.06305713032548294, 'epoch': 4.0}
+训练完成，保存模型中...
+模型已保存到: /home/yangrongjin/LLM-Generated-Text-Detection/best_model

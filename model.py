@@ -200,4 +200,6 @@ if __name__ == "__main__":
     #     evaluate()
     # elif args.mode == 'pack':
     #     pack()
-    train()
+    # train()
+    # predict()
+    evaluate()
